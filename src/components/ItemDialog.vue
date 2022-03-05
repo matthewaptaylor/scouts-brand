@@ -17,17 +17,7 @@
       </v-toolbar>
 
       <v-container>
-        <v-row>
-          <v-col cols="12" sm="6" md="4">
-            <v-img :src="item ? item.image : ''"></v-img>
-          </v-col>
-
-          <v-col>
-            <h2 v-text="item ? item.title : ''" />
-
-            <component :is="item ? item.component : ''" />
-          </v-col>
-        </v-row>
+        <component :is="item ? item.component : ''" />
       </v-container>
     </v-card>
   </v-dialog>

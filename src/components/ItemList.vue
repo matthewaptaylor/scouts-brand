@@ -67,7 +67,8 @@
 <script>
 import ItemCard from '@/components/ItemCard'
 import ItemDialog from '@/components/ItemDialog'
-import BrandGuidelines from '@/components/Items/BrandGuidelines'
+import BrandGuidelines from '@/components/BrandGuidelines'
+import Logo from '@/components/Logo'
 
 export default {
   name: 'ItemList',
@@ -83,8 +84,14 @@ export default {
       {
         title: 'Brand Guidelines',
         tags: ['Generic'],
-        image: '/previews/BrandGuidelines.png',
+        image: require('@/components/BrandGuidelines/preview.png'),
         component: BrandGuidelines,
+      },
+      {
+        title: 'Logo',
+        tags: ['Generic'],
+        image: require('@/components/Logo/preview.png'),
+        component: Logo,
       },
       { title: 'Letterhead', tags: ['Customisable'], image: 'https://picsum.photos/id/11/500/300' },
       { title: 'Section Header', tags: ['Generic'], image: 'https://picsum.photos/id/11/500/300' },

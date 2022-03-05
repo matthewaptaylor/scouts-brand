@@ -8,6 +8,7 @@ export default new Vuetify({
     themes: {
       light: {
         primary: '#5f249f',
+        white: '#ffffff',
         success: '#046a38',
         warning: '#f1c400',
         keas: '#e57200',

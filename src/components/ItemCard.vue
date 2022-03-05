@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" sm="6" md="4" lg="3" xl="2">
     <v-card style="overflow: hidden" @click="$emit('open')">
-      <v-img :src="image" aspect-ratio="2" cover></v-img>
+      <v-img :src="image" aspect-ratio="2" cover />
 
       <div class="pa-2">
         <h2 class="text-h6 text-truncate" v-text="title" />
